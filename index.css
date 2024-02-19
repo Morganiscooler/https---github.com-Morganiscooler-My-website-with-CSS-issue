@@ -1,0 +1,350 @@
+@font-face { font-family: Sixtyfour; 
+src: url('Sixtyfour-Regular.ttf'); }
+@font-face { font-family: HonkRegular;
+src: url('Honk-Regular.ttf'); }
+@font-face { font-family: RubikBubbles;
+src: url('RubikBubbles-Regular.ttf');}
+@font-face { font-family: PixelifySans;
+src: url('PixelifySans-Bold.ttf');}
+/* #dot{
+    width: 1px;
+    height: 1px;
+    color: #ffff;  
+} */
+
+/* #StarCursor{
+    color:aquamarine;
+
+}  */
+
+/* Make an element for 4 point star element */
+
+body{
+    cursor: url('Cursor.png'), auto;
+}
+.trail {
+    /* position: relative; */
+    font-size: 13px;
+    position: absolute;
+    /* Change color as needed */
+    pointer-events: none; /* Make sure the element does not interfere with mouse events */
+    /* transition: transform 0.2s ease-out; Add a smooth transition effect */
+    animation-name: fall;
+    
+    animation-duration: 3s; 
+   
+    /* Do NOT reset to square 1 */
+    animation-fill-mode: forwards;
+  }
+
+
+  /* make an falling animation for the trail */
+  @keyframes fall {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+   
+
+    100% {
+        transform: translate(0px, 200px);
+        visibility: hidden;
+        opacity: 0;
+        /* transition: visibility 0s 1s, opacity 1s linear; */
+    }
+  };
+
+  @keyframes fall-1 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+   
+
+    100% {
+        transform: translate(0px, 100px);
+        visibility: hidden;
+        opacity: 0;
+        /* transition: visibility 0s 1s, opacity 1s linear; */
+    }
+  };
+
+  @keyframes fall-2 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+   
+
+    100% {
+        transform: translate(0px, 200px);
+        visibility: hidden;
+        opacity: 0;
+        /* transition: visibility 0s 1s, opacity 1s linear; */
+    }
+  };
+
+  @keyframes fall-3 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+   
+
+    100% {
+        transform: translate(0px, 300px);
+        visibility: hidden;
+        opacity: 0;
+        /* transition: visibility 0s 1s, opacity 1s linear; */
+    }
+  };
+  
+/* RGB selected text throughout doc */
+/* ::selection{
+    background:#000;
+} */
+
+
+
+.nav-links{
+    /* !!!!!! */
+    /* WHY IS THE DAMN CLASS NOT WORKING ASHDJFSHFJDSHJKFSD */
+    text-align: center; 
+    display: flex; 
+    gap: 2rem; 
+    font-family: PixelifySans;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/* center the links!! */
+.link a{
+    
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+}
+.link a:hover{
+    color:rgb(255, 218, 9);
+}
+
+#HeadingTop{
+    color:white;
+    font-family: HonkRegular;
+    font-size: 5em;
+    text-align: center;
+}
+#Subheading{
+    color:white;
+    font-family: HonkRegular;
+    font-size: 4em;
+    text-align: center;
+}
+/*Need to reposition the rectangle, make the corners round, lower the opacity!*/
+#Introduction{   
+    color: #ffabc0;
+    opacity: 1;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000000;
+    font-family: RubikBubbles;
+    white-space: pre-line;
+    font-size: 1.3em;
+    
+    
+}
+#AboutMe{
+    background: -webkit-linear-gradient(#ffda8a, #d41d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Sixtyfour;
+    margin-bottom: -30px;
+    font-size: 1.7em;
+    -webkit-text-stroke-color: #ff008c;
+    -webkit-text-stroke-width: 0.025px;
+}
+/* buttons */
+/* Make the links on this page hoverable, and change the cursor to Link.png when hovering */
+.buttons:active{
+    cursor: url('Link.png');
+}
+#AboutBtn{
+    
+    width: 200px;
+    height: 100px;
+    font-family: RubikBubbles;
+    font-size: 35px; 
+    border: 7px solid rgb(0, 0, 0);
+    background-color: transparent;
+}
+#AboutBtn:hover{
+    background-color: transparent;
+    color:#fff;
+    opacity: 70%;
+}
+#GalleryBtn{
+    
+    width: 200px;
+    height: 100px;
+    font-family: RubikBubbles;
+    font-size: 35px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: transparent;
+    
+}
+#GalleryBtn:hover{
+ background-color: transparent;
+ color: #fff;
+ opacity: 70%;   
+}
+#CommissionsBtn{
+    
+    width: 200px;
+    height: 100px;
+    font-family: RubikBubbles;
+    font-size: 25px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: transparent;
+    
+}
+#CommissionsBtn:hover{
+    background-color: transparent;
+    color: #fff;
+    opacity: 70%;   
+   }
+#YoutubeBtn{
+    
+    width: 200px;
+    height: 100px;
+    font-family: RubikBubbles;
+    font-size: 35px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: transparent;
+    
+}
+#YoutubeBtn:hover{
+    background-color: transparent;
+    color: #fff;
+    opacity: 70%;   
+   }
+#TiktokBtn{
+    
+    width: 200px;
+    height: 100px;
+    font-family: RubikBubbles;
+    font-size: 35px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: transparent;
+    
+}
+#TiktokBtn:hover{
+    background-color: transparent;
+    color: #fff;
+    opacity: 70%;   
+   }
+#ContactsBtn{
+    
+    width: 200px;
+    height: 100px;
+    font-family: RubikBubbles;
+    font-size: 35px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: transparent;
+}
+#ContactsBtn:hover{
+    background-color: transparent;
+    color: #fff;
+    opacity: 70%;   
+   }
+#Sidebar{
+    background-image: url("starrysky.gif");
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 600px;
+    border-radius: 20px;
+    margin-right: 420px;
+    margin-top: -600px;
+    
+}
+#RectanglePiller{
+    background-image: url('Line.gif');
+    background-color: #cc4aff;
+    /* fix <div> container positioning when shrinking the window */
+    position: relative; 
+    float: left;
+    width: 200px;
+    height: 600px; 
+    border-width: 7.5px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 400px;
+    margin-top: -600px;
+    opacity: 38%;
+    
+}
+
+#Rectangle{
+    
+    width: 600px;
+    height: 600px;    
+    background-color:rgba(0,0,0,0.45);
+    color: #000;
+    border-radius: 30px;
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+#CreatorCopyright{
+    font-family: PixelifySans;
+    font-size: 20px;
+    margin-bottom: 0x;
+    color: #fff;
+}
+#Copyright{
+    
+    margin-bottom: 0x;
+    color: #fff;
+}
+#Skyscrapers{
+    background-image: url("Skyscrapers.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+form{
+    background-color:rgb(255, 255, 255) (0,0,50%);
+    text-align: center;
+    
+}
+/* star cursor element, work on this!*/
+#four-pointed-star{
+  .four-pointed-star{
+    position:relative;
+    margin:1em auto;
+    width:1em;
+    font-size:12em;
+  }
+  
+  .four-pointed-star:before{
+    content:"";
+    position:absolute;
+    background:rgb(255, 90, 186);
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+  
+  .four-pointed-star:after{
+    content:"";
+    position:absolute;
+    background:rgb(255, 90, 186);
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+}

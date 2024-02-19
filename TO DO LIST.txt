@@ -1,0 +1,5 @@
+TO DO LIST:
+1. Make a CSS element for four point star elements
+2. Link up the four point star elements to .trail 
+3. Calculate the distance between current cursor position and next cursor position to SPACE OUT the star particles
+evenly (Do this LATER!!)
